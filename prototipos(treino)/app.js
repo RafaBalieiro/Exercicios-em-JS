@@ -55,7 +55,7 @@ Pessoa.prototype.idade = function () {
     return dataAtual.getFullYear() - this.ano - 1;
   if (dataAtual.getMonth() == this.mes && dataAtual.getDate() < this.dia)
     return dataAtual.getFullYear() - this.ano - 1;
-  else return dataAtual.getFullYear() - this.ano - 1;
+  else return dataAtual.getFullYear() - this.ano;
 };
 
 function criaPerfil(primeiroNome, sobrenome, email, dia, mes, ano) {
