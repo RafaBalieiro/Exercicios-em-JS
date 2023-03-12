@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Gerenciador de Produtos</h1>
+      <div>
+        <form action="" class="formulario">
+          <label for="">Nome do Produto:</label>
+          <input type="text" class="nome" />
+
+          <label for="">Código do Produto:</label>
+          <input type="text" class="codigo" />
+
+          <label for="">Tipo:</label>
+          <input list="tipos" class="tipos" />
+          <datalist id="tipos">
+            <option value="Camisa">Camisa</option>
+            <option value="Caneca">Caneca</option>
+            <option value="Tênis">Tênis</option>
+          </datalist>
+
+          <label for="" class="cor-label active">Cor:</label>
+          <input type="text" class="cor" />
+
+          <label for="">Material:</label>
+          <input type="text" class="material" />
+
+          <label for="">Tamanho</label>
+          <input type="text" class="tamanho" />
+
+          <label for="">Estoque:</label>
+          <input type="text" class="estoque" />
+
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
+      <div class="lista-cadastros">
+        <h2>Cadastros</h2>
+        <ul class="cadastros"></ul>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
